@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.kocka {
+    background-color: green;
+    width: 30%;
+    padding: 20px;
+    box-sizing: border-box;
+    margin: 5px;
+}
+
+@media only screen and (min-width: 641px) and (max-width: 1080px){
+    .kocka {
+       background-color: blue;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .flex {
+        flex-direction: column;
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 2px;
+        
+    }
+}
